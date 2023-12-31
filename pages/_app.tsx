@@ -14,7 +14,8 @@ function MyApp({ Component, pageProps }: AppProps) {
       <div className="top-bar">
         <div className="nav">
           <Link href="/">Home</Link>
-          <Link href="/new">Add Pet</Link>
+          <Link href="/events">Events</Link>
+          <Link href="/pets">Pets</Link>
         </div>
 
         <img

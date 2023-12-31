@@ -27,7 +27,7 @@ type Props = {
   forNewPet?: boolean
 }
 
-const Form = ({ formId, petForm, forNewPet = true }: Props) => {
+const PetForm = ({ formId, petForm, forNewPet = true }: Props) => {
   const router = useRouter()
   const contentType = 'application/json'
   const [errors, setErrors] = useState({})
@@ -67,7 +67,7 @@ const Form = ({ formId, petForm, forNewPet = true }: Props) => {
       const { data } = await res.json()
 
       mutate(`/api/pets/${id}`, data, false) // Update the local data without a revalidation
-      router.push('/')
+      router.push('/pets')
     } catch (error) {
       setMessage('Failed to update pet')
     }
@@ -229,4 +229,4 @@ const Form = ({ formId, petForm, forNewPet = true }: Props) => {
   )
 }
 
-export default Form
+export default PetForm

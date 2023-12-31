@@ -1,4 +1,4 @@
-import Form from '../components/Form'
+import PetForm from '../../components/PetForm'
 
 const NewPet = () => {
   const petForm = {
@@ -13,7 +13,7 @@ const NewPet = () => {
     dislikes: [],
   }
 
-  return <Form formId="add-pet-form" petForm={petForm} />
+  return <PetForm formId="add-pet-form" petForm={petForm} />
 }
 
 export default NewPet
