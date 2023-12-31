@@ -108,6 +108,20 @@ h5.pet-name {
   text-shadow: 0px 0px 4px black;
 }
 
+.event-name {
+  font-weight: bold;
+  font-size: 130%;
+}
+
+h5.event-name {
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+  text-shadow: 0px 0px 4px black;
+}
+
 .info ul {
   padding: 10px;
   padding-top: 0px;

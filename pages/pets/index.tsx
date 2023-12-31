@@ -10,6 +10,11 @@ type Props = {
 const PetsList = ({ pets }: Props) => {
   return (
     <>
+      <Link href={{ pathname: '/pets/new' }}>
+        Add Event
+      </Link>
+      <br />
+
       {pets.map((pet) => (
         <div key={pet._id}>
           <div className="card">
